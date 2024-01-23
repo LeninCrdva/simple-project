@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export class ProductService {
-    baseURL = "http://localhost:8080/api/product";
+    baseURL = "https://spring-project-production.up.railway.app/api/product";
 
     create(product) {
         return axios.post(this.baseURL + "/create", product).then(res => res.data);
